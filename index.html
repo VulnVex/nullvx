@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>nullvex | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Hello, I'm <span>nullvex</span> 👋</h1>
+    <p>I build websites, bots, tools, and automation scripts — along with cybersecurity tools for educational use.</p>
+
+    <h1> Projects</h1>
+
+    <div class="project-card">
+      <h3> NullSpyX</h3>
+      <p>A tool to grab IPs and access device cameras using social engineering. <strong>For educational and ethical use only!</strong></p>
+      <a href="NullSpyX.html" class="btn">Read more about this project</a>
+    </div>
+
+    <div class="project-card">
+      <h3> VexRecon</h3>
+      <p>A powerful website vulnerability scanner with advanced crawling, reporting, and stealth features.</p>
+      <a href="VexRecon.html" class="btn">Read more about this project</a>
+    </div>
+
+    <div class="project-card">
+      <h3> NullStorm</h3>
+      <p>A fast, multi-method Denial of Service (DoS) tool for testing server defenses and performance. Educational use only.</p>
+      <a href="NullStorm.html" class="btn">Read more about this project</a>
+    </div>
+
+    <div class="project-card">
+      <h1>Contact Me</h1>
+      <p>If you want to reach out, collaborate, or ask questions, feel free to get in touch!</p>
+      <a href="contact.html" class="btn secondary">Contact Now</a>
+    </div>
+  </div>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".project-card");
+
+    cards.forEach((card, index) => {
+      setTimeout(() => {
+        card.style.animation = "slideUp 0.6s ease-out forwards";
+      }, index * 200); // 200ms delay between each card
+    });
+  });
+</script>
+</html>
